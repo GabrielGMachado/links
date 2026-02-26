@@ -7,5 +7,6 @@ export default function Layout() {
     screenOptions={{
       headerShown: false,
       contentStyle: { backgroundColor: colors.gray[950]}
+      
   }}/>
 }
