@@ -1,8 +1,10 @@
-import { Image, Text, View } from "react-native"
+import { Image, View, TouchableOpacity } from "react-native"
 import { MaterialIcons } from "@expo/vector-icons"
 
 import { styles } from "./styles"
 import { colors } from "@/styles/colors"
+
+import { Category } from "@/components/category"
 
 export default function Index() {
   return (
@@ -10,8 +12,11 @@ export default function Index() {
       <View style={ styles.header }>
         <Image source={ require("@/assets/logo.png") } style={ styles.logo }></Image>
 
-        <MaterialIcons name="add" size={ 32 } color={ colors.green[300] }/>
+        <TouchableOpacity>
+          <MaterialIcons name="add" size={ 32 } color={ colors.green[300] }/>
+        </TouchableOpacity>
       </View>
+      <Category/>
     </View>
   )
 }
