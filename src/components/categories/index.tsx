@@ -14,8 +14,9 @@ export function Categories() {
       )}
       horizontal
       style={ styles.container }
+      contentContainerStyle={styles.content}
+      showsHorizontalScrollIndicator={false}
     />
   )
-  
 } 
 
